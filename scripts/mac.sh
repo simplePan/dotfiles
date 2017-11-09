@@ -128,6 +128,11 @@ sudo chflags uchg /private/var/vm/sleepimage
 ###############################################################################
 
 # Trackpad: enable tap to click for this user and for the login screen
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -int 1
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerTapGesture -int 0
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.twoFingerDoubleTapGesture -int 1
+defaults write NSGlobalDomain com.apple.trackpad.forceClick -int 0
+
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
