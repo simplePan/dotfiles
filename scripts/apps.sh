@@ -10,3 +10,7 @@ brew bundle
 
 # Node Version Manager
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
+
+# Hopefully sign in to the app store which should automatically download purchased apps
+mas signin --dialog hunter@hunterloftis.com
+
