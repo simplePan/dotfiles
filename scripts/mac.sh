@@ -106,7 +106,7 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 # Set a custom wallpaper image.
-osascript -e "tell application 'Finder' to set desktop picture to POSIX file '$HOME/Pictures/heroku-bg.png'"
+osascript -e "tell application \"Finder\" to set desktop picture to POSIX file \"$HOME/Pictures/heroku-bg.png\""
 
 ###############################################################################
 # SSD-specific tweaks                                                         #
