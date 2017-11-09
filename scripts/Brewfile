@@ -1,6 +1,7 @@
 brew "heroku/brew/heroku"
 brew "wget"
 brew "go"
+brew "mas"
 cask "google-chrome"
 cask "vlc"
 cask "spotify"
