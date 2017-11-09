@@ -105,6 +105,12 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+# Set a custom wallpaper image. `DefaultDesktop.jpg` is already a symlink, and
+# all wallpapers are in `/Library/Desktop Pictures/`. The default is `Wave.jpg`.
+rm -rf ~/Library/Application Support/Dock/desktoppicture.db
+sudo rm -rf /System/Library/CoreServices/DefaultDesktop.jpg
+sudo ln -s $HOME/Pictures/heroku-bg.png /System/Library/CoreServices/DefaultDesktop.jpg
+
 ###############################################################################
 # SSD-specific tweaks                                                         #
 ###############################################################################
@@ -118,6 +124,7 @@ sudo rm /private/var/vm/sleepimage
 sudo touch /private/var/vm/sleepimage
 # …and make sure it can’t be rewritten
 sudo chflags uchg /private/var/vm/sleepimage
+
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
