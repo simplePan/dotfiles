@@ -108,6 +108,9 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # Set a custom wallpaper image.
 osascript -e "tell application \"Finder\" to set desktop picture to POSIX file \"$HOME/Pictures/heroku-bg.png\""
 
+# Set timezone to EST
+sudo systemsetup -settimezone America/New_York
+
 ###############################################################################
 # SSD-specific tweaks                                                         #
 ###############################################################################
