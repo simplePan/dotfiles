@@ -25,10 +25,6 @@ Be sure that one of the apps is 1Password.
 Open 1Password and enable iCloud sync.
 Then, copy ssh keys into ~/.ssh
 
-```
-$ ssh-add -K ~/.ssh/hunterloftis_rsa
-```
-
 ## 5. Restart
 
 Restart the machine and log-in!
