@@ -15,3 +15,6 @@ git_changed='`evil_git_dirty`'
 emojis=(🐶 🐺 🐱 🐭 🐹 🐰 🐸 🐯 🐨 🐻 🐷 🐮 🐵 🐼 🐧 🐍 🐢 🐙 🐠 🐳 🐬 🐥)
 emoji='`echo ${emojis[$RANDOM % 22]}`'
 PS1="\[\033[0;36m\]\w$git_branch$git_changed $emoji  \[\e[0m\]"
+
+# go
+export PATH=$PATH:~/go/bin
