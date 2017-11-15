@@ -108,6 +108,9 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # Set a custom wallpaper image.
 osascript -e "tell application \"Finder\" to set desktop picture to POSIX file \"$HOME/Pictures/heroku-bg.png\""
 
+# Set timezone to EST
+sudo systemsetup -settimezone America/New_York
+
 ###############################################################################
 # SSD-specific tweaks                                                         #
 ###############################################################################
@@ -163,8 +166,8 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 3
-defaults write NSGlobalDomain InitialKeyRepeat -int 10
+defaults write NSGlobalDomain KeyRepeat -int 5
+defaults write NSGlobalDomain InitialKeyRepeat -int 12
 
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
