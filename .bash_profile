@@ -1,5 +1,5 @@
 # ssh
-ssh-agent -s
+ssh-add -K ~/.ssh/*_rsa
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
