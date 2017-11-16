@@ -1,0 +1,24 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "workbench.colorTheme": "One Dark Pro Vivid",
+    "window.zoomLevel": 0,
+    "workbench.iconTheme": "vscode-icons",
+    "editor.fontSize": 14,
+    "editor.tabSize": 2,
+    "editor.minimap.enabled": false,
+    "editor.hover": false,
+    "go.vetFlags": [
+        "-composites=false"
+    ],
+    "git.enableSmartCommit": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "material-icon-theme.showUpdateMessage": false,
+    "extensions.ignoreRecommendations": false,
+    "workbench.activityBar.visible": true,
+    "workbench.statusBar.visible": false,
+    "workbench.sideBar.location": "right",
+    "window.newWindowDimensions": "maximized",
+    "material-icon-theme.showWelcomeMessage": false,
+    "markdown-pdf.styles": [ "md-pdf-style.css" ],
+    "css.colorDecorators.enable": false
+}
