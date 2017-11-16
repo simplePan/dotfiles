@@ -12,7 +12,4 @@ source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.
 GIT_PS1_SHOWDIRTYSTATE=true
 emojis=(🐶 🐺 🐱 🐭 🐹 🐰 🐸 🐯 🐨 🐻 🐷 🐮 🐵 🐼 🐧 🐍 🐢 🐙 🐠 🐳 🐬 🐥)
 emoji='`echo ${emojis[$RANDOM % 22]}`'
-PS1="\[\033[0;36m\]\w$(__git_ps1) $emoji  \[\e[0m\]"
-
-# go
-export PATH=$PATH:~/go/bin
+export PS1="\[\033[0;36m\]\w\$(__git_ps1) $emoji  \[\e[0m\]"
