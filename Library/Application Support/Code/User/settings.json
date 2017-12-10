@@ -17,5 +17,6 @@
     "explorer.openEditors.visible": 0,
     "workbench.colorCustomizations": {
         "tab.inactiveBackground": "#111"
-    }
+    },
+    "workbench.startupEditor": "newUntitledFile"
 }
